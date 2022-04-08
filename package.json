@@ -1,11 +1,8 @@
 {
-  "name": "react-acceder-3",
-  "version": "0.1.0",
+  "name": "react-acceder",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^12.1.4",
-    "@testing-library/user-event": "^13.5.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.0",
@@ -34,5 +31,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurbekzhussip/react-acceder.git"
+  },
+  "keywords": [
+    "rbac",
+    "react-access",
+    "role-based-access-control",
+    "access",
+    "permissions"
+  ],
+  "author": "Nurbek Zhussip",
+  "bugs": {
+    "url": "https://github.com/nurbekzhussip/react-acceder/issues"
+  },
+  "homepage": "https://github.com/nurbekzhussip/react-acceder#readme"
 }
