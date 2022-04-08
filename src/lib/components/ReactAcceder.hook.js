@@ -1,16 +1,16 @@
 import { useContext } from 'react';
 import { ReactAccederContext } from './ReactAcceder.context';
 
-export const useAccess = hookPermissions => {
+export const useAccess = (hookPermissions = []) => {
   const context = useContext(ReactAccederContext);
-  let permissions = [];
+  let permissions;
 
   if (hookPermissions) {
     permissions = hookPermissions;
   } else if (context) {
     permissions = context;
   } else {
-    throw new Error('useAccess must be used within a ReactAccederProvider');
+    throw new Error('ReactAcceder: undefined permissions');
   }
 
   const checkAction = action => {
