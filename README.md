@@ -110,7 +110,7 @@ function Post({ item }) {
           <button onClick={handleEdit}>Edit</button>
         )}
 
-        {user.some('DELETE', item.author_id === userId) && (
+        {user.can('DELETE', item.author_id === userId) && (
           <button onClick={handleDelete}>Delete Post</button>
         )}
       </div>
