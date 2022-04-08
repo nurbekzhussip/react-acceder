@@ -1,6 +1,7 @@
 {
   "name": "react-acceder",
-  "version": "1.0.1",
+  "version": "1.0.0",
+  "description": "React Context driven role-access package",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -26,11 +27,9 @@
     ]
   },
   "keywords": [
-    "rbac",
     "react-access",
-    "role-based-access-control",
-    "access",
-    "permissions"
+    "react permissions",
+    "rbac"
   ],
   "author": "Nurbek Zhussip",
   "bugs": {
