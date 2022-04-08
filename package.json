@@ -1,16 +1,9 @@
 {
   "name": "react-acceder",
-  "version": "1.0.0",
-  "private": true,
-  "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "1.0.1",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -32,10 +25,6 @@
       "last 1 safari version"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nurbekzhussip/react-acceder.git"
-  },
   "keywords": [
     "rbac",
     "react-access",
@@ -47,5 +36,27 @@
   "bugs": {
     "url": "https://github.com/nurbekzhussip/react-acceder/issues"
   },
-  "homepage": "https://github.com/nurbekzhussip/react-acceder#readme"
+  "homepage": "https://github.com/nurbekzhussip/react-acceder#readme",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurbekzhussip/react-acceder.git"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11"
+  }
 }
