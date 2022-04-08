@@ -69,7 +69,7 @@ function App() {
 ```
 
 ```
-**NOTE:**  I recommend passsing permissions via ReactAccederProvider. Because you only pass once.\ 
+**NOTE:**  I recommend passsing permissions via ReactAccederProvider. Because you only pass once. 
 In the case of hooks, you will have to transfer rights each time. If you are passing through a `ReactAccederProvider` and through a hook, then in this case, the parameters of the hooks will take precedence.
 ```
 
