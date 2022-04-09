@@ -1,7 +1,7 @@
-import { useContext } from 'react';
-import { ReactAccederContext } from './ReactAcceder.context';
+import { useContext } from "react";
+import { ReactAccederContext } from "./ReactAcceder.context";
 
-export const useAccess = (hookPermissions = []) => {
+export const useAccess = (hookPermissions) => {
   const context = useContext(ReactAccederContext);
   let permissions;
 
@@ -10,19 +10,19 @@ export const useAccess = (hookPermissions = []) => {
   } else if (context) {
     permissions = context;
   } else {
-    throw new Error('ReactAcceder: undefined permissions');
+    throw new Error("ReactAcceder: undefined permissions");
   }
 
-  const checkAction = action => {
+  const checkAction = (action) => {
     return permissions.includes(action);
   };
 
-  const checkEvery = options => {
-    return options.every(option => option);
+  const checkEvery = (options) => {
+    return options.every((option) => option);
   };
 
-  const checkSome = options => {
-    return options.some(option => option);
+  const checkSome = (options) => {
+    return options.some((option) => option);
   };
 
   const can = (action, ...rest) => {
@@ -42,7 +42,7 @@ export const useAccess = (hookPermissions = []) => {
 
   const some = (action, ...rest) => {
     let hasActionAccess = true;
-    let hasSomeAccess = true;
+    let hasSomeAccess = false;
 
     if (action) {
       hasActionAccess = checkAction(action);
@@ -57,6 +57,6 @@ export const useAccess = (hookPermissions = []) => {
 
   return {
     can,
-    some
+    some,
   };
 };
