@@ -4,7 +4,7 @@
     "lib": ["es6", "dom", "es2017"],
     "module": "commonjs",
     "declaration": true,
-    "outDir": "./lib",
+    "outDir": "./dist",
     "strict": true,
     "jsx": "react-jsx"
   },
