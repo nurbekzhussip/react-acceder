@@ -1,6 +1,6 @@
 {
   "name": "react-acceder",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React Context driven role-access package",
   "main": "dist/index",
   "module": "dist/index",
@@ -8,7 +8,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "tsc",
-    "build2": "babel src/lib --out-dir dist --copy-files",
+    "build-babel": "babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
