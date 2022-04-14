@@ -1,6 +1,12 @@
+import { ReactNode, FC } from 'react';
 import { ReactAccederContext } from './ReactAcceder.context';
 
-const ReactAcceder = ({ children, permissions }) => {
+type PropTypes = {
+  children: ReactNode;
+  permissions: string[];
+};
+
+const ReactAcceder: FC<PropTypes> = ({ children, permissions }) => {
   return (
     <ReactAccederContext.Provider value={permissions}>
       {children}
