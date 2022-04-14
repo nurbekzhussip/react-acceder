@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { ReactAccederContext } from './ReactAcceder.context';
 
-export const useAccess = (hookPermissions: string[]) => {
+export const useAccess = (hookPermissions?: string[]) => {
   const context = useContext(ReactAccederContext);
   let permissions: string[];
 
