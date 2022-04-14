@@ -1,6 +1,6 @@
 {
   "name": "react-acceder",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React Context driven role-access package",
   "main": "dist/index",
   "module": "dist/index",
